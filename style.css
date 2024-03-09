@@ -23,6 +23,8 @@
 } */
 
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -59,3 +61,20 @@ body {
     box-shadow: 0 0 1rem rgba(0,0,0,0.3);
     color: brown;
 }
+
+#reset{
+padding: 1rem;
+justify-content: center;
+align-items: center;
+border-radius: 1rem;
+background-color: bisque;
+font-size: 1.25rem;
+color: black;
+position: absolute;
+top: 80%;
+left: 45%;
+
+
+}
+
+

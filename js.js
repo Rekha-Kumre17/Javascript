@@ -17,3 +17,35 @@
 
 // let par=document.querySelector("p");
 // par.classList.add("newclass");
+
+let boxe = document.querySelectorAll(".boxes");
+let reset_btn = document.querySelector("#reset");
+let turnO = true;
+
+const winPatterns = [
+    [0, 1, 2],
+    [0, 3, 6],
+    [0, 4, 8],
+    [1, 4, 7],
+    [2, 5, 8],
+    [3, 6, 9],
+    [6, 7, 8],
+    [3, 4, 5]]
+    ;
+
+boxe.forEach(
+    (boxes) => {
+        boxes.addEventListener("click", () => {
+            console.log("box was clicked");
+            if (turnO) {
+                boxes.innerText = "O";
+                turnO = false;
+            }
+            else {
+                boxes.innerText = "X";
+                turnO = true;
+            }
+            boxes.disabled=true;
+        });
+    }
+);
